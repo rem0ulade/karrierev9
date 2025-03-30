@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Karriereleiter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>KARRIERELEITER</h1>
+        <div id="status-bar" style="display:none;">
+            <p><strong>User:</strong> <span id="username-display">-</span></p>
+            <p><strong>Tag:</strong> <span id="day">1</span></p>
+            <p><strong>Level:</strong> <span id="level">1</span></p>
+            <p><strong>Karrierestufe:</strong> <span id="career-title">Praktikant</span></p>
+            <p><strong>Firma:</strong> <span id="company">Keine</span></p>
+            <p><strong>Branche:</strong> <span id="branch">-</span></p>
+            <p><strong>Gehalt:</strong> <span id="salary">3000</span> €</p>
+            <p><strong>Kontostand:</strong> <span id="money">0</span> €</p>
+            <p><strong>Beliebtheit:</strong> <span id="popularity">50</span></p>
+            <p><strong>Stress:</strong> <span id="stress">0</span></p>
+            <p><strong>Energie:</strong> <span id="energy">100</span></p>
+            <p><strong>Kündigungsrisiko:</strong> <span id="risk">0%</span></p>
+        </div>
+        <div id="menu" style="display:none;">
+            <button onclick="showCareer()">Karriere</button>
+            <button onclick="showInventory()">Inventar</button>
+            <button onclick="openBizConnect()">BizConnect</button>
+            <button onclick="saveGame()">Save</button>
+            <button onclick="loadGame()">Load</button>
+        </div>
+        <div id="content">
+            <p>Willkommen bei Karriereleiter! Bitte gib deinen Namen ein:</p>
+            <input type="text" id="username-input" placeholder="Dein Name">
+            <br><br>
+            <button id="start-btn">Weiter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
